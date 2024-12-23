@@ -52,5 +52,20 @@ app.listen(3000, () => {
 // Import the Fruit model
 const Fruit = require("./models/fruit.js");
 
+
+// server.js
+
+// GET /fruits/new
+app.get("/fruits/new", (req, res) => {
+    res.send("This route sends the user a form page!");
+  });
+  
+// server.js
+
+// GET /fruits/new
+app.get("/fruits/new", (req, res) => {
+    res.render("fruits/new.ejs");
+  });
+  
   
   
